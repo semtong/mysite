@@ -1,0 +1,18 @@
+
+{% extends "webpage/layout.html" %}
+
+
+{% block body %}
+    <h1>new page</h1>
+    <table>
+        {% for i in president %}
+            {% if i == "문재인"%}
+                <tr>
+                    <td>{{ i }}</td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+
+{% endblock %}
+
